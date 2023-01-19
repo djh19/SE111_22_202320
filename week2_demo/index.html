@@ -7,8 +7,72 @@
     <meta name="description" content="W2D2 Bio Assignment Demo" >
     
     <title>W2 | Bio</title>
+
+    <!--IN DOCUMENT STYLING-->
+    <style>
+        /*in here we write in CSS*/
+        /*SELECTING in CSS & Javascript: select specific elements on a page
+            *by ELEMENT type            ex: body, div, p
+            *by ID attribute            ex: #wrapper, #nav, #footer
+            *by CLASS attribute         ex: coming in week 3
+        */
+
+        div {
+            border:1px solid black;
+            padding:10px; /*adds space between content & border of element*/
+            margin:5px; /*adds space between elements*/
+        }
+
+        #nav, #footer {
+            background-color:lightgrey;
+        }
+    </style>
 </head>
-<body>
+<body style="background-color:grey">
+
+    <div id="wrapper">
+        
+        <!--HEADER-->
+        <h1>Daniel Hillcoat</h1>
+
+        <!--NAV-->
+        <div id="nav">
+
+            <!--EXTERNAL LINK: a link to a page outside of my website-->
+            <a href="https://www.meca.edu" target="_blank">VISIT MECA</a>
+
+            <!--INTERNAL LINK: a link to a page inside of your website root folder-->
+            <!--RELATIVE PATH-->
+            <a href="page2.html">Page 2</a>
+
+            <!--IN PAGE JUMP LINK: a link to another section wihin the current page-->
+            <a href="#bio">BIO</a>
+            <a href="#school">SCHOOL</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#footer">BOTTOM OF PAGE</a>
+
+        </div>
+
+        <!--BIO-->
+        <div id="bio">
+            
+        </div>
+
+        <!--SCHOOLS-->
+        <div id="schools">
+            
+        </div>
+
+        <!--HOBBIES-->
+        <div id="hobbies">
+            
+        </div>
+
+        <!--FOOTER-->
+        <div id="footer">
+            
+        </div>
+    </div>
 
 </body>
 </html>
