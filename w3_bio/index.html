@@ -7,27 +7,74 @@
     <meta name="author" content="Dhillcoat">
     <meta name="description" content="W3 BIO">
     <title>Document</title>
+
+    <style>
+        /*write in CSS here*/
+
+        div{/*applies to all divs on page*/
+            border:1px solid black;
+            padding:10px;
+            margin:5px;
+        }
+
+        #wrapper {/*applies to the wrapper element*/
+            background-color:darkgrey;
+        
+        }
+
+        .fancy-font {
+            font-family:Trebuchet, sans-serif;
+
+        }
+
+        .border{
+            border:1px solid maroon;
+
+        }
+
+        .pic {
+            width:500px;
+            padding:5px;
+            box-shadow:0 0 8px black;
+            margin-left:200px;
+
+        }
+
+    </style>
 </head>
-<body>
+<body style="background-color:rgb(192,191,191)">
     <div id="wrapper">
 
         <div id="header" class="border">
+            <h1 class="fancy-font"><em>Dan Hillcoat BIO</em></h1>
 
         </div>
 
         <div id="nav" class="border">
-     
-       
+            <a href="index.html">| HOME |</a>
+            <a href="schools.html">| SCHOOLS |</a>
+            <a href="hobbies.html">| HOBBIES |</a>
+
+            <br>
+
+            <a href="index.html#footer">| Bottom of Page |</a>
+
         </div>
 
         <div id="main-content" class="border">
-
+            <h2>My name is Daniel Hillcoat, I am 18 years old. I am currently studying Cyber Security at NEIT. I have always enjoyes using the internet and learning about computers. I hope to graduate and work with computer for a living.</h2>
+            <img src="images/NEIT-logo.jpg" class="pic">
         </div>
 
         <div id="footer" class="border">
-            
+            <p>&copy; D Hillcoat | SE111.22 | Winter 2023</p>
+
+            <br>
+
+            <a href="index.html#header">go to HOME page header</a>
         </div>
 
     </div>
+    
 </body>
 </html>
