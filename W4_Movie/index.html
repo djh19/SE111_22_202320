@@ -2,104 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Katie Truchon, the coolest" >
-    <meta name="description" content="W2D2 Bio Assignment Demo" >
-    
-    <title>W2 | Bio</title>
+    <meta name="author" content="Dhillcoat">
+    <meta name="description" content="W4 Movie">
+    <title>W4_Movie</title>
 
-    <!--IN DOCUMENT STYLING-->
     <style>
-        /*in here we write in CSS*/
-        /*SELECTING in CSS & Javascript: select specific elements on a page
-            *by ELEMENT type            ex: body, div, p
-            *by ID attribute            ex: #wrapper, #nav, #footer
-            *by CLASS attribute         ex: coming in week 3
-        */
+        /*write in CSS here*/
 
-        div {
+        
+        div{/*applies to all divs on page*/
             border:1px solid black;
-            padding:10px; /*adds space between content & border of element*/
-            margin:5px; /*adds space between elements*/
+            padding:10px;
+            margin:5px;
         }
 
-        #nav, #footer {
-            background-color:lightgrey;
+        #wrapper {/*applies to the wrapper element*/
+            background-color:darkred;
+        
         }
+
+        .fancy-font {
+            font-family:Trebuchet, sans-serif;
+
+        }
+
+        .border{
+            border:1px solid black;
+
+        }
+
+        .pic {
+            width:500px;
+            padding:5px;
+            box-shadow:0 0 8px black;
+            /*margin-left:200px;*/
+
+        }
+
     </style>
 </head>
-<body style="background-color:grey">
-
+<body style="background-color:rgb(192,191,191)">
     <div id="wrapper">
+
+        <div id="header" class="border">
+            <h1 class="fancy-font"><em>The Blacklist</em></h1>
+            <img src="Images/blacklist_logo.jpg" class="pic">
+
+            <br>
         
-        <!--HEADER-->
-        <h1>Daniel Hillcoat</h1>
 
-        <!--NAV-->
-        <div id="nav">
+            <a href="index.html">| HOME |</a>
+            <a href="cast.html">| CAST |</a>
+            <a href="review.html">| REVIEW |</a>
+            <a href="index.html#footer">| Bottom of Page |</a>
+        </div>
+        
 
-            <!--EXTERNAL LINK: a link to a page outside of my website-->
-            <a href="https://www.meca.edu" target="_blank">VISIT MECA</a>
-
-            <!--INTERNAL LINK: a link to a page inside of your website root folder-->
-            <!--RELATIVE PATH-->
-            <a href="page2.html">Page 2</a>
-
-            <!--IN PAGE JUMP LINK: a link to another section wihin the current page-->
-            <a href="#bio">BIO</a>
-            <a href="#school">SCHOOL</a>
-            <a href="#hobbies">HOBBIES</a>
-            <a href="#footer">BOTTOM OF PAGE</a>
-
+        <div id="main-content" class="info">
+            <h2 class="fancy-font">The Blacklist is an American crime thriller television series that premiered on NBC on September 23, 2013. The show follows Raymond "Red" Reddington (James Spader), an ex-US Naval Intelligence officer turned high-profile criminal and one of the FBI’s Most Wanted fugitives who voluntarily surrenders to them after eluding capture for decades. He tells the FBI that he has a list of the most dangerous criminals in the world that he has compiled over the years called the "Blacklist", and that he is willing to inform on their operations in exchange for immunity from prosecution.</h2>
+            <!--<img src="Images/Logos/blacklist_logo.jpg" class="pic">-->
         </div>
 
-        <!--BIO-->
-        <div id="bio">
-            <h2>About Me</h2>
+        <div id="footer" class="border">
+            <p>&copy; D Hillcoat | SE111.22 | Winter 2023</p>
 
-            <p>Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> a man can be brave.A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing and the wall.</p>
-
-            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/capsule_616x353.jpg?t=1671485100" alt="Kim J holding up Blood" style="width:500px" title="Hi!">
-
-
-            <img src="images/stormsEnd.jpg" alt="Storms End catle in spring time" style="width:500px">
-
-        </div>
-
-        <!--SCHOOLS-->
-        <div id="schools">
-            <h2>Schools</h2>
-
-            <ol>
-                <li>Silver Lake Regional High School</li>
-                <li>Silver Lake Regional Middle School</li>
-                <li>Halifax Elementary School</li>
-            </ol>
-
-            <img src="images/Silver-Lake.jpg" alt="Silver Lake Regional High School" style="width:500px">
-        </div>
-
-        <!--HOBBIES-->
-        <div id="hobbies">
-            <h2>Hobbies</h2>
-            <ol>
-                <li>Video Games</li>
-                <li>Computer Building</li>
-                <li>Working with servers</li>
-            </ol>
-            <img src="images/motherboard.png" alt="Motherboard" style="width:500px">
-        </div>
-
-        <!--FOOTER-->
-        <div id="footer">
-            <a href="#nav">Back to Top</a>
             <br>
-            <p>&copy; D Hillcoat | SE111 | Winter 2023</p>
-            <br>
-            <!--VALIDATION SCREENSHOT-->
-            <img src="images/index-validation.png" alt="valdation of page" style="width:100%">
+
+            <a href="index.html#header">go to HOME page header</a>
         </div>
+
     </div>
-
+    
 </body>
 </html>
