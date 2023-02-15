@@ -43,6 +43,7 @@
 
                             <td><!--second data cell in row (right)-->
                                 <input - type="text" required maxlength="20" name="gfirst" id="g-first" placeholder="First Name">
+                                <br>
                                 <input - type="text" required maxlength="20" name="gfirst" id="g-last" placeholder="Last Name">
                             </td>
                             
@@ -54,11 +55,11 @@
                         <tr>
 
                             <td>
-                                <label for="lastName">Last Name:</label>
+                                <label for="cfirst">Child's First Name</label>
                             </td>
 
                             <td>
-                                <input type="text" id="lastName" name="lastName" maxlength="50">
+                                <input - type="text" required name="cfirst" id="c-first" placeholder="Child's First Name">
                             </td>
 
                         </tr>
@@ -66,79 +67,24 @@
                         <tr>
 
                             <td>
-                                <label for="email">Email:</label>
+                                <label for="age">Child's Age</label>
                             </td>
 
                             <td>
-                                <input type="text" id="email" name="email" maxlength="50">
+                                <input - type="number" required name="age" value="3">
                             </td>
 
                         </tr>
-
-                        <tr>
-
+                            
+                        <tr> 
                             <td>
-                                <label for="comments">Comments:</label>
+                                <label for="d&t"><h1><b>Date and Time</b></h1></label>
                             </td>
-
                             <td>
-                                <textarea name="comments" rows="10" cols="21" placeholder="Your comments here....">You can populate the textbox but user will need to delete</textarea>
-                            </td>
-
-                        </tr>
-
-                        <!--non text input elements-->
-                        <!--
-                            select element creates a drop-down menu
-                        -->
-                        <tr>
-
-                            <td>
-                                <label for="faveColor">Pick Your Fave Color:</label>
-                            </td>
-
-                            <td>
-                                <!--similar to list types: containing element and then indiv options from menu-->
-
-                                <!--each option must have a value attribute so data can be passed from form accurately-->
-                                <select name="faveColor">
-
-                                    <option value="red">Red</option>
-                                    <option value="orange">Orange</option>
-                                    <option value="yellow">Yellow</option>
-                                    
-                                </select>
-                            </td>
-
-                        </tr>
-
-                        <!--radio buttons are a type of input, they are circular only ONE can be chosen out of set (set is determined by the name attribute values)-->
-                        <tr>
-                            <td>
-                                <label for="study">Program of Study:</label>
-                            </td>
-
-                            <td>
-                                <input type="radio" name="study" value="SE">Software Engineering <br>
-                                <input type="radio" name="study" value="CYB">Cybersecurity <br>
-                                <input type="radio" name="study" vaue="NE">Network Engineering <br> 
-                                <input type="radio" name="study" value="WD">Web Development
+                                <label for="blank"></label>
                             </td>
                         </tr>
-
-                        <tr>
-                            <!--checkboxes allow for multiple responses -->
-                            <td>
-                                <label for="vehicle">Select Your Vehicles</label>
-                            </td>
-
-                            <td>
-                                <input type="checkbox" name="vehicle1" value="car">Car 
-                                <input type="checkbox" name="vehicle2" value="ship">Ship
-                                <input type="checkbox" name="vehicle3" value="horse">Horse
-                            </td>
-                        </tr>
-
+                        
                         <tr>
                             <td>
                                 <label for="date">Date: </label>
@@ -148,6 +94,106 @@
                                 <input type="date" name="date">
                             </td>
                         </tr>
+
+                        <tr>
+                            <td>
+                                <label for="time">Start Time</label>
+                            </td>
+                            <td>
+                                <input type="time" required name="time"></label>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="guests">Number of Guests</label>
+                            </td>
+                            <td>
+                                <input type="number" name="guests" value="5"></label>
+
+                            </td>
+                        </tr>
+                            
+
+                        <tr> 
+                            <td>
+                                <label for="food"><h1><b>Food</b></h1></label>
+                            </td>
+                            <td>
+                                <label for="blank"></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="size">Size</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="size">sm</label>
+                                <input type="radio" name="size">md</label>
+                                <input type="radio" name="size">lg</label>
+
+                            </td>
+                        </tr>
+
+                        <!--radio buttons are a type of input, they are circular only ONE can be chosen out of set (set is determined by the name attribute values)-->
+                        <tr>
+                            <td>
+                                <label for="drinks">Drinks</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" required name="drink1" checked="true" value="coke">Coke<br>
+                                <input type="checkbox" required name="drink2" value="sprite">Sprite<br>
+                                <input type="checkbox" required name="drink3" value="fruit punch">Fruit Punch<br>
+                                <input type="checkbox" required name="drink4" value="lemonade">Lemonade<br>
+                                <input type="checkbox" required name="drink5" value="iced tea">Iced Tea<br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="cake">Cake</label>
+                            </td>
+                            <td>
+                                <select name="cake"><option>Chocolate</option><option>Vanilla</option><option>I'll Bring My Own</option></select>
+                                
+
+                            </td>
+                        </tr>
+
+                        <tr> 
+                            <td>
+                                <label for="decorations"><h1><b>Decorations</b></h1></label>
+                            </td>
+                            <td>
+                                <label for="blank"></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="colors">Color Scheme</label>
+                            </td>
+                            <td>
+                                <input type="color" name="colors">Choose a color for the scheme for the party</input>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <label for="comments">Additional Comments</label>
+                            </td>
+    
+                            <td>
+                                <textarea name="comments" placeholder="Please add any additional comments here"></textarea>
+                            </td>
+    
+                        </tr>
+                        
                         
                         <tr>
                             <td>
