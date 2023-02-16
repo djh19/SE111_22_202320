@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dhillcoat">
+    <meta name="description" content="W6 Pay Calculator">
+    <title>JavaScript Pay Calculator</title>
+</head>
+<body>
+
+    <script>
+
+        var hourlyPay = Number(prompt(`What is your hourly pay $`))
+        var weeklyHours = Number(prompt("How many hours do you work in a week "))
+        var tax = Number(prompt("What is the current tax rate "))
+
+        var tax = tax /100
+
+        //I changed the tax rate to a decimal to make my life a little easier
+
+        //I will now find the gross pay for the week
+
+        var grossPay = hourlyPay * weeklyHours * 2
+
+
+        //then I will take the gross pay to find the taxed amount
+
+        var taxedIncome = grossPay * tax
+        var netPay = grossPay - taxedIncome
+
+        //I need to output the solutions and format them to only have 2 decimal points
+
+        console.log(`Gross Pay: ${grossPay.toFixed(2)}`)
+        console.log(`Uncle Sam's Cut: ${taxedIncome.toFixed(2)}`)
+        console.log(`Net Pay: ${netPay.toFixed(2)}`)
+        alert("Goodbye")
+
+
+    </script>
+    
+</body>
+</html>
+
+
+
