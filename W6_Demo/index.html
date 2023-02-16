@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dhillcoat">
+    <meta name="description" content="W6 Intro to JS Demo">
+    <title>Intro to JavaScript</title>
+</head>
+
+<style>
+
+
+</style>
+
+<body>
+
+    <h1>Week 6 Intro Demo | JavaScript</h1>
+
+    <script>
+        //everythng inside of the <script> tags must be written in JAVASCRIPT
+        
+        //creating and declaring a variable -- keyword
+        var num1 = 10
+
+        //this also works
+        var num2
+        num2 = 7
+
+        //cannot use num1 or num2 until they have data assigned
+
+        var sum = num1 + num2
+
+        console.log(num1) //only for dev tools and for testing. WILL NOT DISPLAY ON PAGE.
+
+        console.log(num1, num2, sum)
+        console.log("Hello World!")
+        console.log(num1 + " + " + num2 + " = " + sum)
+
+        console.log(`${num1} + ${num2} = ${sum.toFixed(2)} `)
+
+
+        //output display for user alert()
+        alert(`The sum is: ${sum}!`)
+        console.log("Hi!")
+        alert("Hello!")
+        console.log("good\tbyeeee")
+        //\t is a tab space and \n is a new line
+
+        //input --> gaining data from the user
+        //prompt() --> input() in PYTHON
+        var tip = Number(prompt(`Hello World! \nThe sum is ${sum.toFixed(2)}! \nEnter a number to add as a tip: $`))
+
+        var total = sum + tip
+        alert(`Your total with tip is now: ${total.toFixed(2)}`)
+
+    
+
+
+
+    </script>
+    
+</body>
+</html>
