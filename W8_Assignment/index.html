@@ -36,6 +36,8 @@
     <script>
 	
 		//Store the elements (tags) in variables
+		var fName = document.querySelector(`#first`)
+		var lName = document.querySelector(`#last`)
 		
 
 		//Make an array to store the people
@@ -73,8 +75,8 @@
 
             var person = {
 
-				first: ``,
-				last: ``,
+				first: fName.value,
+				last: lName.value
 
             }//end of person object
 
@@ -82,13 +84,12 @@
 
 
 			//Add the person object into the people array by using the .push() array method.
-			people.push(
-				prompt(`Enter a First name for the Array: `))
+			people.push(person)
+				
 		
-			console.log(people)
 
 			//Bubble sort people on the last name
-			for(let i=0; i < people.length-1; i++)
+			for(let index=0; index < people.length-1; index++)
 			{
 				for(let j=0; j < people.length-1; j++)
 				{
@@ -102,31 +103,31 @@
 			}//end of bubble sort algorithm!
 
 			//console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
-			
+			console.log(people)
 
 			//create a variable called 'output' that has an empty string value stored to 
-			
+			var output = ""
 
 			//Loop through the objects in the people array
 			for(let index = 0; index < people.length; index++)
             {
 
 				//Loop through each property in the object
-				for(key in people[i])
+				for(j in people[index])
                 {
 					//The output should use the key set to uppercase using the .toUpperCase() String method as a title and the value of the key.
 					//Output will resemble:
 					//FIRST: Ivan
 					//LAST: Drago
-				
+					output += `<p><b>${j}:</b> ${people[index][j]}</p>`
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				
+				output += `<hr>`
 
 
 			}//end of loop going through people array to edit 'output'
-
+			document.querySelector(`#output`).innerHTML = output
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
 				
